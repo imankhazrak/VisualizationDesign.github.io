@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 3 - Interactive Data Visualization</title>
+  <link rel="stylesheet" type="text/css" href="./inspector.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<div id="visualization"></div>
+
+<!-- Module Script -->
+<script type="module">
+  import define from "./index.js";
+  import {Runtime, Library, Inspector} from "./runtime.js";
+
+  const runtime = new Runtime(new Library());
+  const main = runtime.module(define, Inspector.into(document.querySelector('#visualization')));
+</script>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+   
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: red; 
+            color: #1f6caab9;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .menu h2,
+        .search-bar h2 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        #map {
+            flex: 1;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South America Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div id="sidebar" style="background-color: rgb(245, 244, 242);">
+        <div class="menu">
+        </div> 
+        
+        <select style="color: rgb(164, 39, 137);" id="country-select">
+            <option>Select a country</option>
+        </select>
+        
+    </div>
+
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="Map.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

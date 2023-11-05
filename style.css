@@ -1,0 +1,15 @@
+format{
+    background-color: aqua;
+    /* Example style for the slider */
+#yearSlider {
+    width: 100%;
+    margin: 10px 0;
+  }
+  /* CSS for the larger image */
+.large-image {
+    width: 200px; /* or any other size */
+    height: auto;
+  }
+  
+  
+}
